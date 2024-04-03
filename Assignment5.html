@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .one{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uiQVYjhmkQASJaayxuvoGS0_AyBscQho2iCCFy0_Iw&s);
+            height: 400px;
+            width: 700px;
+            margin-top: 100px;
+            margin-left: 300px;
+            box-shadow: 20px 20px 5px rgba(5, 231, 136, 0.267);
+        }
+
+        .two{
+            background-image: url(https://5.imimg.com/data5/ANDROID/Default/2021/4/CB/PX/CO/84481921/img-20210308-wa0017-jpg.jpg);
+             height: 330px;
+             width: 300px;
+             border: 10px solid rgb(23, 1, 1);
+             margin-top: 30px;
+             background-size: cover;
+             position: absolute;
+             margin-left: 210px ;
+        }
+        .door1{
+                  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DLKrHjRJZGeyPy_hNyviGNPl6KGMdJ7ouQ&usqp=CAU);
+                  height: 350px;
+                  width: 150px;
+                  position: absolute; 
+                  top: 0;
+                  /* transform: perspective(400px) rotateY(0deg); */
+                  transform-origin: left;  
+                  transition: all 2s;   
+        }
+        .two:hover>.door1 {
+            transform: perspective(400px) rotateY(-180deg);
+        }
+        .door2{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DLKrHjRJZGeyPy_hNyviGNPl6KGMdJ7ouQ&usqp=CAU);
+           position: absolute;
+           top: 0;
+           right: 0;
+           width: 150px;
+           height: 350px;
+           transform-origin: right;  
+           transition: all 2s;   
+        }
+        .two:hover>.door2{
+            transform: perspective(400px) rotateY(180deg);
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one">
+            <div class="two"> 
+                <div class="door1"></div> 
+                <div class="door2"></div>
+            </div>  
+    </div>
+</body>
+</html>
